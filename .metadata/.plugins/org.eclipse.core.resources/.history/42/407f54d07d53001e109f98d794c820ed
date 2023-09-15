@@ -1,0 +1,10 @@
+package core.person;
+
+public class Person {
+
+	private String nickname;
+	private String address;
+	private int age;
+	
+	
+}

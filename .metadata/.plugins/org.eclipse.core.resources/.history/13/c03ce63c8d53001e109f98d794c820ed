@@ -1,0 +1,15 @@
+package core.chap1;
+
+public class Hotel {
+	//호텍은 레스토랑 객체에 의존적.
+	private Restaurant restaurant = new AsianRestaurant();
+	
+	//호텔의 정보를 알려주는 기능
+	public void inform() {
+		System.out.printf("우리 호텍의 레스토랑은 %s 입니다.",restaurant.getClass().getSimpleName());
+		restaurant.order();
+	}
+	
+	
+
+}

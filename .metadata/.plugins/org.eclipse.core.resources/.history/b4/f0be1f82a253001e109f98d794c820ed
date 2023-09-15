@@ -1,0 +1,29 @@
+package core.chap3;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.Setter;
+
+@Setter
+public class AsianRestaurant implements Restaurant {
+
+	 private Chef chef ;
+	 
+	 //요리 코스
+	 private Course course ;
+	 
+	 @Autowired
+	public AsianRestaurant(Chef chef, Course course) {
+		super();
+		this.chef = chef;
+		this.course = course;
+	}
+	 
+	 //요리를 주문하는 기능
+	 public void order() {
+		 System.out.println("Asian 요리를 주문합니다.");
+		 course.combineMenu();
+		 chef.cook();
+	 }
+
+}

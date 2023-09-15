@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--   스프링 컨테이너 내에 디자인한 객체 클레스를 등록  -->
+	<bean id="hotel" calss="core.chap2.Hotel" />
+	<bean id="asianRes" calss="core.chap2.AsianRestaurant" />
+	<bean id="sushi" calss="core.chap2.AsianCourse" />
+	<bean id="asianChef" calss="core.chap2.AsianChef" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
+
+
+
+
